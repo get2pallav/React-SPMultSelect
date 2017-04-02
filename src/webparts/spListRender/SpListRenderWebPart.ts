@@ -30,27 +30,13 @@ export default class SpListRenderWebPart extends BaseClientSideWebPart<ISpListRe
   private _listFieldDropDownDisabled: boolean = true;
 
   public render(): void {
-    const isFieldsAvilable = jQuery("#hiddenField").val() == "" || jQuery("#hiddenField").val() == undefined ? false:true;
-
-    if(isFieldsAvilable){
-        SPHelper.GetItems(this.properties.Lists,jQuery("#hiddenField").val());
-    }
-
     const element: React.ReactElement<ISpListRenderProps> = React.createElement(
       SpListRender,
       {
         description: this.properties.description
       }
     );
-    const element2: React.ReactElement<ITreeProp> = React.createElement(
-      PersonContact,
-      {
-        lable:"hi"
-      }
-    );
-
     ReactDom.render(element, this.domElement);
-  //   ReactDom.render(element2, this.domElement);
   }
 
   protected get dataVersion(): Version {
@@ -77,7 +63,6 @@ export default class SpListRenderWebPart extends BaseClientSideWebPart<ISpListRe
       });
   }
   protected onPropertyPaneFieldChanged(propertyPath: string, oldValue: any, newValue: any): void {
-    debugger;
     super.onPropertyPaneFieldChanged(propertyPath, oldValue, newValue);
     if (propertyPath == "Lists" && newValue && newValue != oldValue) {
         this._fields = [];
@@ -130,10 +115,6 @@ export default class SpListRenderWebPart extends BaseClientSideWebPart<ISpListRe
       ]
     };
   }
-	protected onPropertyPaneConfigurationComplete() {
-    debugger;
-    this.render();
-	}
 }
 
 export class SPHelper {
