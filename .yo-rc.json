@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "libraryName": "reach-sp-to-do",
+    "framework": "react",
+    "version": "1.0.0",
+    "libraryId": "3a766dc4-a69d-49b4-8a81-3494c09a44c5"
+  }
+}

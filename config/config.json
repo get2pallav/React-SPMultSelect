@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/toDo/ToDoWebPart.js",
+      "manifest": "./src/webparts/toDo/ToDoWebPart.manifest.json",
+      "outputPath": "./dist/to-do.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/spListUi/SpListUiWebPart.js",
+      "manifest": "./src/webparts/spListUi/SpListUiWebPart.manifest.json",
+      "outputPath": "./dist/sp-list-ui.bundle.js"
+    },
+    {
+      "entry": "./lib/webparts/spListRender/SpListRenderWebPart.js",
+      "manifest": "./src/webparts/spListRender/SpListRenderWebPart.manifest.json",
+      "outputPath": "./dist/sp-list-render.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "toDoStrings": "webparts/toDo/loc/{locale}.js",
+    "spListUiStrings": "webparts/spListUi/loc/{locale}.js",
+    "spListRenderStrings": "webparts/spListRender/loc/{locale}.js"
+  }
+}

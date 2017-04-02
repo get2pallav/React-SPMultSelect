@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "reach-sp-to-do-client-side-solution",
+    "id": "3a766dc4-a69d-49b4-8a81-3494c09a44c5",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/reach-sp-to-do.sppkg"
+  }
+}
