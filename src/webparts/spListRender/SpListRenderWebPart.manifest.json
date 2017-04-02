@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "1b3a0982-8497-4df0-8214-edeb399690cc",
+  "alias": "SpListRenderWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "1b3a0982-8497-4df0-8214-edeb399690cc",
+    "group": { "default": "Under Development" },
+    "title": { "default": "SP-ListRender" },
+    "description": { "default": "SP List Render" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "SP-ListRender",
+      "Lists":""
+    }
+  }]
+}

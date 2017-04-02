@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "05442251-6d44-4b2a-a362-d98364fe328b",
+  "alias": "SpListUiWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "05442251-6d44-4b2a-a362-d98364fe328b",
+    "group": { "default": "Under Development" },
+    "title": { "default": "SPListUI" },
+    "description": { "default": "List UI display" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "SPListUI",
+      "fields":"fields"
+    }
+  }]
+}
